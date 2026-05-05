@@ -124,24 +124,55 @@ A **Promise** represents a value that will be available **in the future**.
 ## ✅ Creating a Promise
 
 ```js
-function fetchData() {
+// Function that returns a Promise
+function fetchData(){
 
-  // Returning a Promise object
-  return new Promise((resolve, reject) => {
+    // Creating a new Promise object
+    return new Promise((resolve, reject)=>{
 
-    // Simulate async operation
-    setTimeout(() => {
+        // Simulating API delay (asynchronous operation)
+        setTimeout(()=>{
 
-      // Successful result
-      resolve("Data received");
+            const success = true   // condition to simulate success or failure
 
-      // On failure:
-      // reject("Error occurred");
+            if(success){
+                // ✅ If success → send data back
+                resolve("data received")
+            }
+            else{
+                // ❌ If failure → send error
+                reject("ERROR OCCURED")
+            }
 
-    }, 1000);
-  });
+        }, 1000) // wait for 1 second
+    })
 }
 ```
+“The .json() method is only available on Response objects returned by the fetch API. Since our Promise returns a string, calling .json() will cause an error.”
+🔄 Full Execution Flow
+getData() called
+await fetchData() → waits 1 second
+resolve("data received")
+res = "data received"
+console.log(res)
+
+🚀 Key Takeaways
+Promise can return anything (string/object/array)
+.json() is only for fetch API responses
+await pauses execution
+try-catch handles errors.
+
+✅ 1. Promise
+
+A Promise represents a future value
+
+✅ 2. async/await
+
+Makes asynchronous code look like synchronous
+
+✅ 3. resolve vs reject
+resolve() → success
+reject() → error
 
 ---
 
