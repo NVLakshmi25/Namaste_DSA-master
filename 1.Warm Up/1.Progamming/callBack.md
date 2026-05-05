@@ -196,7 +196,34 @@ fetchData()
 3️⃣ resolve() runs after 1 second
 4️⃣ .then() receives the data
 ```
+✅ Async Function
+const getData = async () => {
 
+👉 async means:
+
+This function can use await and handles Promises easily
+
+✅ Try Block
+try {
+
+👉 Used for error handling
+
+✅ Await Promise
+const res = await fetchData()
+
+👉 Step-by-step:
+
+Call fetchData()
+Wait until Promise completes
+Store result in res
+📌 Important Point
+resolve("data received")
+
+👉 So:
+
+res = "data received"
+
+✔️ res is just a string
 ---
 
 ## ✅ Promise Rejection Example
