@@ -123,7 +123,7 @@ console.log(c2()); // 2
 ```
 
 👉 Each function call creates a **new closure**
-👉 Closures do **not share memory** unless explicitly designed
+👉 Closures do **not share memory** unless explicitly designed.
 
 ---
 
@@ -171,7 +171,7 @@ for (var i = 0; i < 3; i++) {
 🔍 Why?
 
 * `var` is **function-scoped**
-* All callbacks share the **same `i`**
+* All callbacks  share and iterate  the **same  value  of `i`** 
 
 ---
 
