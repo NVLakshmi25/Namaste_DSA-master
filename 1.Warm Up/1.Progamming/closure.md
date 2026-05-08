@@ -7,6 +7,7 @@ A **step-by-step, beginner → advanced guide** to understanding **Closures in J
 ## 🧠 What Is a Closure?
 
 A **closure** is created when a function **remembers variables from its outer (lexical) scope**, even **after the outer function has finished execution**.
+>>>>  function expression ,  return statement  that is  closure 
 
 ### 📌 In Simple Words
 
