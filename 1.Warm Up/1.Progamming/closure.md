@@ -7,6 +7,7 @@ A **step-by-step, beginner → advanced guide** to understanding **Closures in J
 ## 🧠 What Is a Closure?
 
 A **closure** is created when a function **remembers variables from its outer (lexical) scope**, even **after the outer function has finished execution**.
+>>>>  function expression ,  return statement  that is  closure 
 
 ### 📌 In Simple Words
 
@@ -122,7 +123,7 @@ console.log(c2()); // 2
 ```
 
 👉 Each function call creates a **new closure**
-👉 Closures do **not share memory** unless explicitly designed
+👉 Closures do **not share memory** unless explicitly designed.
 
 ---
 
@@ -170,7 +171,7 @@ for (var i = 0; i < 3; i++) {
 🔍 Why?
 
 * `var` is **function-scoped**
-* All callbacks share the **same `i`**
+* All callbacks  share and iterate  the **same  value  of `i`** 
 
 ---
 
